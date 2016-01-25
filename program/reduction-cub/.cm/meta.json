@@ -1,0 +1,47 @@
+{
+  "backup_data_uid": "97dfe15565489490",
+  "build_compiler_vars": {},
+  "compile_deps": {
+    "compiler": {
+      "local": "yes",
+      "sort": 20,
+      "tags": "compiler,lang-c-cuda"
+    },
+    "compiler_cl": {
+      "local": "yes",
+      "sort": 10,
+      "tags": "compiler,lang-c"
+    }
+  },
+  "compiler_add_include_as_env_from_deps": [
+    "CK_ENV_LIB_STDCPP_INCLUDE", 
+    "CK_ENV_LIB_STDCPP_INCLUDE_EXTRA"
+  ], 
+  "compiler_env": "CK_CXX",
+  "data_name": "reduction template",
+  "main_language": "c++",
+  "process_in_tmp": "yes",
+  "program": "yes",
+    "include_dirs": [
+    "/usr/local/cuda-7.5/samples/common/inc"
+  ], 
+  "run_cmds": {
+    "default": {
+      "ignore_return_code": "no",
+      "run_time": {
+        "run_cmd_main": "$#BIN_FILE#$ "
+      }
+    }
+  },
+  "source_files": [
+    "reduction.cpp",
+    "reduction_kernel.cu"
+  ],
+  "tags": [
+    "tool",
+    "reductions",
+    "lang-c-cuda",
+    "cuda"
+  ],
+  "target_file": "a"
+}
